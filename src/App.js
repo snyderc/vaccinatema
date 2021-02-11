@@ -10,14 +10,16 @@ import Faq from './components/Faq';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <NavHeader />
-      <Switch>
-        <Route path="/eligibility" component={Eligibility}/>
-        <Route path="/sites" component={Sites}/>
-        <Route path="/faq" component={Faq}/>
-        <Route path="/" component={HomePage}/>
-      </Switch>
+      <div className="main-content">
+        <Switch>
+          <Route path="/eligibility" component={Eligibility}/>
+          <Route path="/sites" component={Sites}/>
+          <Route path="/faq" component={Faq}/>
+          <Route path="/" component={HomePage}/>
+        </Switch>
+      </div>
       <Footer />
     </div>
   );
